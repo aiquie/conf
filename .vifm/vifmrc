@@ -39,7 +39,7 @@ USE_SCREEN=0
 
 # This is how many files to show in the directory history menu.
 
-HISTORY_LENGTH=15
+HISTORY_LENGTH=10
 
 # To always save pane location on exit and start vifm in the
 # last visited directory set this to 1.
@@ -140,9 +140,11 @@ BOOKMARKS=z=/home/krash/.vifm=../
 # The %a macro is ignored.  To use a % you must put %%.
 
 FILETYPE=music=mp3==mplayer
+FILETYPE==m3u==mplayer -playlist
 FILETYPE==pdf==zathura %f &
 FILETYPE==djvu==apvlv %f &
 FILETYPE=image=jpg,jpeg==feh -F %f &
+FILETYPE=fuseiso=iso==FUSE_MOUNT|fuseiso %SOURCE_FILE %DESTINATION_DIR
 
 # For automated FUSE mounts, you must register an extension with FILETYPE=..
 # in one of following formats:
@@ -165,7 +167,7 @@ FILETYPE=image=jpg,jpeg==feh -F %f &
 # The FUSE_HOME directory will be used as a root dir for all FUSE mounts.
 # Unless it exists with write/exec permissions set, vifm will attempt to create it.
 
-FUSE_HOME=/tmp/vifm_FUSE
+FUSE_HOME=/home/krash/.vifm/fuse
 
 # Format for displaying time in file list. For example:
 # TIME_STAMP_FORMAT=%m/%d-%H:%M
