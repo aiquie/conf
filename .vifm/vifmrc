@@ -115,6 +115,7 @@ COLOR_SCHEME=Default
 # BOOKMARKS=mark=/full/directory/path=filename
 
 BOOKMARKS=H=/home/krash/=../
+BOOKMARKS=p=/home/krash/c-walk/music=../
 BOOKMARKS=z=/home/krash/.vifm=../
 
 # COMMAND=command_name=action
@@ -141,7 +142,7 @@ BOOKMARKS=z=/home/krash/.vifm=../
 
 FILETYPE=music=mp3==mplayer
 FILETYPE==m3u==mplayer -playlist
-FILETYPE=video=avi,mkv==mplayer
+FILETYPE=video=avi,mkv,mp4,mpg==mplayer
 FILETYPE==pdf==zathura %f &
 FILETYPE==djvu==apvlv %f &
 FILETYPE=image=jpg,jpeg==feh -F %f &
