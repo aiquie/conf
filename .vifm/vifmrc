@@ -141,7 +141,7 @@ BOOKMARKS=z=/home/krash/.vifm=../
 
 FILETYPE=music=mp3==mplayer
 FILETYPE==m3u==mplayer -playlist
-FILETYPE=video=avi,mkv,mp4,mpg,wmv,flv,mov==mplayer
+FILETYPE=video=avi,mkv,mp4,mpg,mpeg,wmv,flv,mov==mplayer
 FILETYPE==pdf==zathura %f &
 FILETYPE==djvu==apvlv %f &
 FILETYPE=image=png,jpg,jpeg==feh -F %f &
