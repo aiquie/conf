@@ -1,0 +1,7 @@
+# Write your default config options here!
+
+msgcolor=yes
+msglevel=demuxer=2:demux=2:decaudio=2:decvideo=2:codeccfg=2:subreader=2
+
+ao=pulse
+
