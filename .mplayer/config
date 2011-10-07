@@ -3,5 +3,11 @@
 msgcolor=yes
 msglevel=demuxer=2:demux=2:decaudio=2:decvideo=2:codeccfg=2:subreader=2
 
+osdlevel=3
+
+subfont-osd-scale=2
+subfont-autoscale=3
+
 ao=pulse
+vo=xv
 
